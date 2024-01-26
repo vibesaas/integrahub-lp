@@ -16,6 +16,7 @@
     "dev": "gulp dev",
     "build": "gulp build",
     "preview": "serve -p 5000 dist",
+    "deploy": "gh-pages -d dist",
     "lint": "prettier --write \"./src/**/*.(js|html|scss|md)\"",
     "test:lint": "prettier --check \"./src/**/*.(js|html|scss|md)\""
   },
@@ -26,6 +27,7 @@
     "babel-preset-env": "1.7.0",
     "browser-sync": "2.29.3",
     "del": "7.0.0",
+    "gh-pages": "^6.1.1",
     "gulp": "4.0.2",
     "gulp-accessibility": "3.1.1",
     "gulp-autoprefixer": "8.0.0",
