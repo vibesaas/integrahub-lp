@@ -14,9 +14,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: "10.x"
-      - run: pnpm install
-      - run: pnpm run build
-      - run: pnpm test:lint
+      - run: npm install
+      - run: npm run build
+      - run: npm test:lint
       - name: Deploy
         uses: crazy-max/ghaction-github-pages@v1
         with:
