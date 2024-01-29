@@ -174,7 +174,7 @@ input[type='range'] {
     }
 
     &[orient='vertical'] {
-      -webkit-appearance: slider-vertical;
+      transform: rotate(-90deg);
       writing-mode: bt-lr;
 
       &::-webkit-slider-runnable-track {
