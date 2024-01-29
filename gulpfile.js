@@ -326,7 +326,7 @@ function browserSyncInit(done) {
 
 function copyImages() {
   console.info(logSymbols.info, 'Optimizing Images...')
-  return src('src/assets/img/**/*.+(png|jpg|jpeg|gif|svg|mp4|ogv|webm)')
+  return src('src/assets/img/**/*.+(png|jpg|jpeg|webp|gif|svg|mp4|ogv|webm)')
     .pipe(newer('dist/assets/img/'))
     .pipe(dest('dist/assets/img/'))
     .pipe(browserSync.stream())
@@ -334,7 +334,7 @@ function copyImages() {
 
 function minifyImagesSrc() {
   console.info('---------------OPTIMIZING IMAGES---------------')
-  return src('src/assets/img/**/*.+(png|jpg|jpeg|gif|svg|mp4|webm|ogv|ogg)')
+  return src('src/assets/img/**/*.+(png|jpg|jpeg|webp|svg|mp4|webm|ogv|ogg)')
     .pipe(
       imagemin.default(
         [
